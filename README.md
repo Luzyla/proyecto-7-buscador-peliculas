@@ -1,4 +1,4 @@
-# Buscador de Películas / Movies Searcher ~ by Luzyla
+# Buscador de Películas / Movie Searcher ~ by Luzyla
 
 ## URL: luzyla-proyecto-7.netlify.app
 
