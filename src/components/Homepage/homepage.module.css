@@ -1,0 +1,28 @@
+
+.body {
+    width: 100%;
+    height: 100%;
+    color: #C1C1C1;
+    background-color: #323232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+  
+}
+
+.containerIcons, .containerSearch {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.containerSearch {
+    margin-left: 1rem;
+}
+
+.search {
+    margin-left: 0.4rem;
+    background-color: #C1C1C1;
+    border-style: none;
+}
