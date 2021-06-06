@@ -1,4 +1,4 @@
-import styles from './navbar.module.css'
+import styles from './navbar.module.scss'
 import { RiHome3Line } from "react-icons/ri";
 import { RiMovie2Line } from "react-icons/ri";
 import { RiTvLine } from "react-icons/ri";

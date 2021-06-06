@@ -1,4 +1,4 @@
-import styles from './homepage.module.css'
+import styles from './homepage.module.scss'
 import Moviestendencia from './Moviestendencia/Moviestendencia'
 import Seriestendencia from './Seriestendencia/Seriestendencia'
 

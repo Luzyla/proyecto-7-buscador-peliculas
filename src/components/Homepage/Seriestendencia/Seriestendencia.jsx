@@ -1,4 +1,4 @@
-import styles from './seriestendencia.module.css'
+import styles from './seriestendencia.module.scss'
 
 const Seriestendencia = () => {
   return (

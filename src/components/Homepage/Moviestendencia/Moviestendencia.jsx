@@ -1,4 +1,4 @@
-import styles from './moviestendencia.module.css'
+import styles from './moviestendencia.module.scss'
 
 const Moviestendencia = () => {
   return (
