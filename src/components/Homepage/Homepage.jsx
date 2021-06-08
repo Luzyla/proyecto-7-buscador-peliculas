@@ -1,15 +1,14 @@
 import styles from './homepage.module.scss'
 import Section from './Section/Section'
+import Details from './Details/Details'
 
 
 const Homepage = () => {
   return (
     <section className={styles.body}>
       
-      <Section 
-        title="Películas que son tendencia"
-      />
-      
+      <Details />
+
       <Section 
         title="Series que son tendencia"
       />

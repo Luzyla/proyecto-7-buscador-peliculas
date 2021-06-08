@@ -1,7 +1,4 @@
-
-$color-contraste: goldenrod;
-$color-shadow: black;
-$color-base: #fafafa;
+@import '../../../style/variables.module.scss';
 
 .container {
     width: 75%;

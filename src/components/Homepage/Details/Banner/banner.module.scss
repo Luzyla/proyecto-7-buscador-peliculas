@@ -1,0 +1,37 @@
+@import '../../../../style/variables.module.scss';
+
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.containerImg {
+    width: 100vw;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.bannerImg {
+    width: 100%;
+}
+
+.containerNavBar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBarButtons {
+    font-weight: 200;
+    margin-right: 1rem;
+}
+
+.navBarButtons:hover {
+    cursor: pointer;
+    color: $color-contraste;
+
+}
+
