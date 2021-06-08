@@ -27,11 +27,11 @@
 .navBarButtons {
     font-weight: 200;
     margin-right: 1rem;
+    text-shadow: 0 0 3px $color-shadow;
 }
 
 .navBarButtons:hover {
     cursor: pointer;
     color: $color-contraste;
-
 }
 

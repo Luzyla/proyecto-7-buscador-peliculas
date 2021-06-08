@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.containerInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 2rem 20%;
+}
+
+.containerTxt {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 0.7rem;
+    text-align: left;
+}
+
+.title, .stars, .sinopsis, .txt {
+    padding: 0.2rem 0;
+}
+
+.title {
+    margin-top: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.socialMedia {
+    margin-top: 2rem;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
