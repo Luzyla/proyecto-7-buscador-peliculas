@@ -1,0 +1,35 @@
+@import '../section.module.scss';
+
+.container {
+    width: 8.5rem;
+    margin-right: 0.5rem;
+}
+
+.containerImg {
+    display: inline-block;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(202, 202, 202, 0.01), 0 6px 20px 0 rgba(180, 180, 180, 0.1);
+}
+
+.cardImg {
+    width: 8.5rem;
+    transition: 1s;
+}
+
+.txtImg {
+    font-size: 0.7rem;
+    text-align: left;
+    margin-left: 0.3rem;
+    padding-bottom: 2rem;
+    transition: 0.5s;
+}
+
+.container:hover {
+    color: $color-contraste;
+    cursor: pointer;
+}
+
+.cardImg:hover {
+    transform: scale(1.2);
+    transform-origin: 50% 50%;
+}

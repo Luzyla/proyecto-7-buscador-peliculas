@@ -5,14 +5,10 @@ import Homepage from './components/Homepage/Homepage';
 const App = () => {
   return (
     <div className="App">
-      <section className="Navbar">
-        <Navbar />      
-      </section>
+      
+      <Navbar />      
 
-      <section className="Homepage">
-        <Homepage />
-      </section>
-
+      <Homepage />
 
     </div>
   );

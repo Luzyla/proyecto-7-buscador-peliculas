@@ -1,0 +1,39 @@
+
+$color-contraste: goldenrod;
+$color-shadow: black;
+$color-base: #fafafa;
+
+.container {
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.containerCards {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.titleOfSection {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+    text-shadow: 0 0 3px $color-shadow;
+}
+
+.icon {
+    font-size: 2rem;
+    color: $color-contraste;
+    text-shadow: 0 0 3px $color-shadow;
+    transition: 0.5s;
+}
+
+.icon:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+}
+

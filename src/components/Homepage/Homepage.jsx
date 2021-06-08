@@ -1,20 +1,19 @@
 import styles from './homepage.module.scss'
-import Moviestendencia from './Moviestendencia/Moviestendencia'
-import Seriestendencia from './Seriestendencia/Seriestendencia'
+import Section from './Section/Section'
 
 
 const Homepage = () => {
   return (
     <section className={styles.body}>
       
-      <div className={styles.contenedor}>
-          <Moviestendencia />
-      </div>
+      <Section 
+        title="Películas que son tendencia"
+      />
       
-      <div className={styles.contenedor}>
-          <Seriestendencia />
-      </div>
-
+      <Section 
+        title="Series que son tendencia"
+      />
+    
     </section>
   );
 }

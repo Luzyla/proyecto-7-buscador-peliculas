@@ -13,6 +13,7 @@
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-end;
+    position: fixed;
     
 }
 
@@ -20,6 +21,7 @@
     font-size: 1.3rem;
     margin-left: 1rem;
     align-self: center;
+    cursor: pointer;
 }
 
 .containerIcons, .containerSearch {
@@ -36,4 +38,9 @@
     margin-left: 0.4rem;
     background-color: #C1C1C1;
     border-style: none;
+}
+
+.search::placeholder {
+    padding: 0.3rem;
+    font-size: 0.7rem;
 }
