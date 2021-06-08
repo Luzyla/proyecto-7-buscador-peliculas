@@ -13,7 +13,7 @@ $color-base: #fafafa;
 
 .containerCards {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -23,6 +23,7 @@ $color-base: #fafafa;
     align-items: center;
     font-weight: 200;
     text-shadow: 0 0 3px $color-shadow;
+    margin-top: 2.5rem;
 }
 
 .icon {
