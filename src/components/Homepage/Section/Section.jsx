@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 
 const Section = ({title, items}) => {
-  const [variable, setVariable] = useState(1)
+  const [variable, setVariable] = useState()
   console.log("Section items", items)
 
   useEffect(()=>{}, [])
@@ -24,6 +24,7 @@ const Section = ({title, items}) => {
           url={`https://image.tmdb.org/t/p/w370_and_h556_bestv2/${item.poster_path}`}
           subtitle={item.title || item.name}
           key={item.id}
+          id={item.id}
         />)})}        
         
         

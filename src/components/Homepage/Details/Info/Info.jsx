@@ -7,29 +7,25 @@ import { IoLogoInstagram } from 'react-icons/io';
 import { IoIosLink } from 'react-icons/io';
 
 
-const Info = ({url, title, sinopsis, stars, time, gender, budget, money, production}) => {
+const Info = ({url, title, item}) => {
   return (
     <div className={styles.container}>
         
         <div className={styles.containerInfo}>
             
             <Card className={styles.cardImg}
-            url="https://images-na.ssl-images-amazon.com/images/I/61aG6EicTIL._AC_SY741_.jpg"
+            url={url}
             />
-            
-            {/* <div className={styles.containerImg}>
-                <img className={styles.infoImg} src={url} alt={title} />
-            </div> */}
 
-            <div className={styles.containerTxt}>
+            {item && (<div className={styles.containerTxt}>
                 <h4 className={styles.title}>{title}</h4>
-                <div className={styles.stars}>{stars}</div>
-                <p className={styles.sinopsis}>{sinopsis}</p>
-                <p className={styles.txt}>Duración: {time}</p>
-                <p className={styles.txt}>Géneros: {gender}</p>
-                <p className={styles.txt}>Presupuesto: {budget}</p>
-                <p className={styles.txt}>Recaudación: {money}</p>
-                <p className={styles.txt}>Producción: {production}</p>
+                <p className={styles.stars}>{item.popularity}</p>
+                <p className={styles.sinopsis}>{item.overview}</p>
+                <p className={styles.txt}>Duración: {item.runtime}</p>
+                <p className={styles.txt}>Géneros: {item.genres.name}</p>
+                <p className={styles.txt}>Presupuesto: ${item.budget}</p>
+                <p className={styles.txt}>Recaudación: ${item.revenue}</p>
+                <p className={styles.txt}>Producción: {item.production_companies.name}</p>
                 <div className={styles.socialMedia}>
                     <SiImdb className={styles.icon}/>
                     <RiTwitterFill className={styles.icon}/>
@@ -37,7 +33,7 @@ const Info = ({url, title, sinopsis, stars, time, gender, budget, money, product
                     <IoLogoInstagram className={styles.icon}/>
                     <IoIosLink className={styles.icon}/>
                 </div>
-            </div>  
+            </div>)}  
         </div>    
 
 

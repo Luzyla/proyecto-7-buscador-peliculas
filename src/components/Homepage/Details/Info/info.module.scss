@@ -1,7 +1,11 @@
+@import '../../../../style/variables.module.scss';
+
 .container {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    color: $color-background-contraste;
+    background-color: $color-background-claro;
 }
 
 .containerInfo {
@@ -17,6 +21,7 @@
     flex-direction: column;
     font-size: 0.7rem;
     text-align: left;
+    color: $color-background-contraste;
 }
 
 .title, .stars, .sinopsis, .txt {
@@ -24,6 +29,7 @@
 }
 
 .title {
+    font-size: 1.5rem;
     margin-top: 0;
 }
 
