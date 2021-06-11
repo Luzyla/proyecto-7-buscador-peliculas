@@ -10,6 +10,7 @@
     justify-content: flex-start;
     align-items: flex-end;
     position: fixed;
+    z-index: 2;
     
 }
 
@@ -19,7 +20,13 @@
     align-self: center;
     cursor: pointer;
     text-shadow: 0 0 3px $color-shadow;
+    color: $color-background-contraste;
 }
+
+.iconActive icon {
+    color: $color-contraste;    
+}
+
 
 .icon:hover {
     color: $color-contraste;
@@ -33,6 +40,8 @@
 
 .containerSearch {
     margin-left: 1rem;
+    display: flex;
+    align-items: center;
 }
 
 .search {

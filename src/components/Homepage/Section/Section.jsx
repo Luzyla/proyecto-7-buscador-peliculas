@@ -1,10 +1,18 @@
 import styles from './section.module.scss'
 import Card from './Card/Card'
 import { RiArrowDropRightLine } from "react-icons/ri";
+import { useEffect, useState } from 'react';
 
 
-const Section = ({title}) => {
+const Section = ({title, items}) => {
+  const [variable, setVariable] = useState(1)
+  console.log(variable)
+  console.log("Section items", items)
+
+  useEffect(()=>{}, [])
+  
   return (
+    
     <div className={styles.container}>
       
       <h2 className={styles.titleOfSection}>
@@ -12,26 +20,14 @@ const Section = ({title}) => {
         <RiArrowDropRightLine className={styles.icon} />
       </h2>
       <div className={styles.containerCards}>
-        <Card 
-          url="https://images-na.ssl-images-amazon.com/images/I/61aG6EicTIL._AC_SY741_.jpg" 
-          subtitle="Harry Potter and the Deathly Hallows"
-        />
-        <Card 
-          url="https://images-na.ssl-images-amazon.com/images/I/61aG6EicTIL._AC_SY741_.jpg" 
-          subtitle="Harry Potter and the Deathly Hallows"
-        />
-        <Card 
-          url="https://images-na.ssl-images-amazon.com/images/I/61aG6EicTIL._AC_SY741_.jpg" 
-          subtitle="Harry Potter and the Deathly Hallows"
-        />
-        <Card 
-          url="https://images-na.ssl-images-amazon.com/images/I/61aG6EicTIL._AC_SY741_.jpg" 
-          subtitle="Harry Potter and the Deathly Hallows"
-        />
-        <Card 
-          url="https://images-na.ssl-images-amazon.com/images/I/61aG6EicTIL._AC_SY741_.jpg" 
-          subtitle="Harry Potter and the Deathly Hallows"
-        />
+        {items && items.map((item) => {
+          return (<Card 
+          url={`https://image.tmdb.org/t/p/w370_and_h556_bestv2/${item.poster_path}`}
+          subtitle={item.title || item.name}
+          key={item.id}
+        />)})}        
+        
+        
       </div>
             
     </div>

@@ -31,11 +31,11 @@ const Info = ({url, title, sinopsis, stars, time, gender, budget, money, product
                 <p className={styles.txt}>Recaudación: {money}</p>
                 <p className={styles.txt}>Producción: {production}</p>
                 <div className={styles.socialMedia}>
-                    <SiImdb />
-                    <RiTwitterFill />
-                    <IoLogoFacebook />
-                    <IoLogoInstagram />
-                    <IoIosLink />
+                    <SiImdb className={styles.icon}/>
+                    <RiTwitterFill className={styles.icon}/>
+                    <IoLogoFacebook className={styles.icon}/>
+                    <IoLogoInstagram className={styles.icon}/>
+                    <IoIosLink className={styles.icon}/>
                 </div>
             </div>  
         </div>    
