@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react';
 
 const Section = ({title, items}) => {
   const [variable, setVariable] = useState(1)
-  console.log(variable)
   console.log("Section items", items)
 
   useEffect(()=>{}, [])
