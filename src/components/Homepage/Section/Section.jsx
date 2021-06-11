@@ -2,9 +2,10 @@ import styles from './section.module.scss'
 import Card from './Card/Card'
 import { RiArrowDropRightLine } from "react-icons/ri";
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
-const Section = ({title, items}) => {
+const Section = ({title, items, type}) => {
   const [variable, setVariable] = useState()
   console.log("Section items", items)
 
@@ -14,10 +15,12 @@ const Section = ({title, items}) => {
     
     <div className={styles.container}>
       
-      <h2 className={styles.titleOfSection}>
-        {title} 
-        <RiArrowDropRightLine className={styles.icon} />
-      </h2>
+      <Link to={`/tendencia/${type}`}>
+        <h2 className={styles.titleOfSection}>
+          {title} <RiArrowDropRightLine className={styles.icon} />
+        </h2>
+      </Link>
+
       <div className={styles.containerCards}>
         {items && items.map((item) => {
           return (<Card 
@@ -26,8 +29,6 @@ const Section = ({title, items}) => {
           key={item.id}
           id={item.id}
         />)})}        
-        
-        
       </div>
             
     </div>

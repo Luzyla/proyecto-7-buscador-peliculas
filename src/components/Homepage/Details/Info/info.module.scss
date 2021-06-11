@@ -22,19 +22,32 @@
     font-size: 0.7rem;
     text-align: left;
     color: $color-background-contraste;
+    margin-left: 1rem;
 }
 
 .title, .stars, .sinopsis, .txt {
     padding: 0.2rem 0;
 }
 
+.stars {
+    color: $color-contraste;
+}
+
+.sinopsis {
+    text-align: justify;
+}
+
 .title {
-    font-size: 1.5rem;
-    margin-top: 0;
+    font-size: 1.1rem;
+    font-weight: 200;
+    margin-top: -0.3rem;
+    margin-bottom: 0.3rem;
 }
 
 p {
     margin: 0;
+    font-size: 0.62rem;
+    font-weight: 100;
 }
 
 .socialMedia {
@@ -44,4 +57,13 @@ p {
 .icon {
     margin-right: 0.2rem;
     font-size: 1rem;
+}
+
+.icon:hover {
+    color: $color-contraste;
+}
+
+a {
+    text-decoration: none;
+    color: $color-background-contraste;
 }
