@@ -43,7 +43,7 @@ const Info = ({ url, item, media_type }) => {
             <Reveneu item={item} media_type={item.media_type}/>
               
             <Production item={item} />
-            
+          
             <div className={styles.socialMedia}>
               <a
                 href={`https://www.imdb.com/title/${item.imdb_id}/`}

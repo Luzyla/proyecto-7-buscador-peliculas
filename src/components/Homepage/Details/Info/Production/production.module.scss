@@ -1,15 +1,16 @@
 @import '../../../../../style/variables.module.scss';
 
-.containerTxt {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    font-size: 0.7rem;
+.txt {
+    padding: 0.2rem 0;
+    font-size: 0.65rem;
     text-align: left;
     color: $color-background-contraste;
     margin-left: 1rem;
+    margin: 0;
+    font-size: 0.62rem;
+    font-weight: 100;
 }
 
-.txt {
-    padding: 0.2rem 0;
+.txtCompany {
+    margin-left: 0;
 }
