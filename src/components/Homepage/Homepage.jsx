@@ -30,13 +30,13 @@ const Homepage = () => {
       <Section 
         title="Películas que son tendencia"
         items={trendingMovies}
-        type="movies"
+        type="/movies/trending"
       />
 
       <Section 
         title="Series que son tendencia"
         items={trendingSeries}
-        type="series"
+        type="/series/trending"
       />
     
     </section>

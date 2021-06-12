@@ -8,6 +8,9 @@ import Details from './components/Homepage/Details/Details';
 import Search from './components/Homepage/Search/Search';
 import Footer from './components/Footer/Footer';
 import Trending from './components/Homepage/Movies/Trending/Trending';
+import TopRated from './components/Homepage/Movies/TopRated/TopRated';
+import Upcoming from './components/Homepage/Movies/Upcoming/Upcoming';
+import NowPlaying from './components/Homepage/Movies/NowPlaying/NowPlaying';
 
 const App = () => {
   return (
@@ -20,7 +23,10 @@ const App = () => {
         <Route path="/movies" exact component={Movies}/>
         <Route path="/series" exact component={Series}/>
         <Route path="/details/:id" component={Details}/>
-        <Route path="/trending/movies" exact component={Trending}/>
+        <Route path="/movies/trending" exact component={Trending}/>
+        <Route path="/movies/top-rated" exact component={TopRated}/>
+        <Route path="/movies/upcoming" exact component={Upcoming}/>
+        <Route path="/movies/now-playing" exact component={NowPlaying}/>
       </Switch>
       
       <Footer />

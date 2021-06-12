@@ -14,7 +14,7 @@ const Section = ({title, items, type}) => {
     
     <div className={styles.container}>
       
-      <Link to={`/trending/${type}`}>
+      <Link to={`${type}`}>
         <h2 className={styles.titleOfSection}>
           {title} <RiArrowDropRightLine className={styles.icon} />
         </h2>

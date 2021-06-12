@@ -1,18 +1,18 @@
-import styles from './movies.module.scss'
-import Section from '../Section/Section'
-import { useEffect, useState } from 'react'
-import { useParams } from 'react-router'
+import styles from './movies.module.scss';
+import Section from '../Section/Section';
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router';
 
 const Movies = () => {
   
   
-  const [popularMovies, setPopularMovies] = useState([])
+  const [trendingMovies, setTrendingMovies] = useState([])
 
   useEffect(() => {
     fetch('https://api.themoviedb.org/3/movie/popular?api_key=986cb57c124ba1dd4bd40f4efe74ae25')
     .then(res => res.json())
     .then(response => { 
-      setPopularMovies(response.results.slice(0,5))   
+      setTrendingMovies(response.results.slice(0,5))   
     })
   }, [])
 
@@ -55,9 +55,9 @@ const Movies = () => {
     <section className={styles.body}>
 
       <Section 
-        title="Películas populares"
-        items={popularMovies}
-        type="/movies/popular"
+        title="Películas que son tendencia"
+        items={trendingMovies}
+        type="/movies/trending"
       />
 
       <Section 
