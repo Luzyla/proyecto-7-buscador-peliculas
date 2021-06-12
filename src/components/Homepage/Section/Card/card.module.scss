@@ -2,7 +2,9 @@
 
 .containerImg {
     overflow: hidden;
-    box-shadow: 0 4px 8px 0 rgba(202, 202, 202, 0.01), 0 6px 20px 0 rgba(180, 180, 180, 0.1);
+    background-size: cover;
+    background-position: center center;
+    margin: 0.2rem;
 }
 
 .cardImg {
@@ -24,5 +26,5 @@
 
 .cardImg:hover {
     transform: scale(1.1);
-    transform-origin: 50% 50%;
+    transform-origin: 50%;
 }

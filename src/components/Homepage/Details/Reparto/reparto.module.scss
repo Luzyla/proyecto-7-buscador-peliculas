@@ -1,6 +1,7 @@
+@import '../../Section/section.module.scss';
 @import '../../Section/Card/card.module.scss';
 @import '../../../../style/variables.module.scss';
-// @import '../../homepage.module.scss';
+@import '../../homepage.module.scss';
 
 .txtCharacter {
     padding-bottom: 1rem;
@@ -9,19 +10,16 @@
     transition: 0.5s;
 }
 
-.containerSimil {
+.containerCast {
     width: 75%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: flex-start; 
+    flex-wrap: wrap;
 }
 
-.containerSimilCards {
+.containerCastCards {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-}
-
-.containerSimilCards p {
-    margin-bottom: 1.3rem;
 }

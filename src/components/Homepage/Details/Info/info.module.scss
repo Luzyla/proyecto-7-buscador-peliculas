@@ -1,7 +1,11 @@
+@import '../../../../style/variables.module.scss';
+
 .container {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    color: $color-background-contraste;
+    background-color: $color-background-claro;
 }
 
 .containerInfo {
@@ -17,22 +21,49 @@
     flex-direction: column;
     font-size: 0.7rem;
     text-align: left;
+    color: $color-background-contraste;
+    margin-left: 1rem;
 }
 
 .title, .stars, .sinopsis, .txt {
     padding: 0.2rem 0;
 }
 
+.stars {
+    color: $color-contraste;
+}
+
+.sinopsis {
+    text-align: justify;
+}
+
 .title {
-    margin-top: 0;
+    font-size: 1.1rem;
+    font-weight: 200;
+    margin-top: -0.3rem;
+    margin-bottom: 0.3rem;
 }
 
 p {
     margin: 0;
+    font-size: 0.62rem;
+    font-weight: 100;
 }
 
 .socialMedia {
     margin-top: 2rem;
+}
+
+.icon {
+    margin-right: 0.2rem;
     font-size: 1rem;
-    margin-right: 0.5rem;
+}
+
+.icon:hover {
+    color: $color-contraste;
+}
+
+a {
+    text-decoration: none;
+    color: $color-background-contraste;
 }

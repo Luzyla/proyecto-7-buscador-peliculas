@@ -1,0 +1,44 @@
+@import "../../homepage.module.scss";
+@import "../../../../style/variables.module.scss";
+
+.containerCast {
+    width: 75%;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+
+.containerList {
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.videoTitle {
+    font-weight: 100;
+    margin: 0;
+    padding-top: 0.2rem;
+}
+
+.videoTxt {
+    margin-top: 0.2rem;
+}
+
+.videoTitle:hover {
+    cursor: pointer;
+    color: $color-contraste;
+}
+
+.iconVideo {
+    font-size: 1.5rem;
+}
+
+.iconVideo:hover {
+    cursor: pointer;
+    color: $color-contraste;
+}

@@ -1,0 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import '../../../style/variables.module.scss';
+
+.container {
+    color: $color-background-contraste;
+    background-color: $color-background-claro;
+    font-family: 'Asap Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    flex-direction: column;
+}
