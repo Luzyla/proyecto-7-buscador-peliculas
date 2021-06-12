@@ -1,8 +1,4 @@
-/* % flex-start {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-} */
+@import '../../style/variables.module.scss';
 
 .navbar {
     width: 100%;
@@ -22,6 +18,11 @@
     margin-left: 1rem;
     align-self: center;
     cursor: pointer;
+    text-shadow: 0 0 3px $color-shadow;
+}
+
+.icon:hover {
+    color: $color-contraste;
 }
 
 .containerIcons, .containerSearch {
