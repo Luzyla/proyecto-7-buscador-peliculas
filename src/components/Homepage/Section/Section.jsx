@@ -1,12 +1,11 @@
 import styles from './section.module.scss'
 import Card from './Card/Card'
 import { RiArrowDropRightLine } from "react-icons/ri";
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 
-const Section = ({title, items, type}) => {
-  const [variable, setVariable] = useState()
+const Section = ({title, items, type, media_type}) => {
 
   useEffect(()=>{}, [])
   
@@ -27,6 +26,7 @@ const Section = ({title, items, type}) => {
           subtitle={item.title || item.name}
           key={item.id}
           id={item.id}
+          media_type={media_type}
         />)})}        
       </div>
             

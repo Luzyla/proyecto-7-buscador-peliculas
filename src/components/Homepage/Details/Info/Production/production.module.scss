@@ -1,0 +1,15 @@
+@import '../../../../../style/variables.module.scss';
+
+.containerTxt {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 0.7rem;
+    text-align: left;
+    color: $color-background-contraste;
+    margin-left: 1rem;
+}
+
+.txt {
+    padding: 0.2rem 0;
+}

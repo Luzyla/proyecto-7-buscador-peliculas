@@ -6,46 +6,44 @@ import { IoLogoFacebook } from "react-icons/io";
 import { IoLogoInstagram } from "react-icons/io";
 import { IoIosLink } from "react-icons/io";
 import Stars from "./Stars/Stars";
-import Divider from "./Divider/Divider";
+import TitleInfo from "./TitleInfo/TitleInfo";
+import Sinopsis from "./Sinopsis/Sinopsis";
+import Genres from "./Genres/Genres";
+import Budget from "./Budget/Budget";
+import Reveneu from "./Reveneu/Reveneu";
+import RunTime from "./RunTime/RunTime";
+import Production from "./Production/Production";
 
-const Info = ({ url, item }) => {
+const Info = ({ url, item, media_type }) => {
   console.log("item", item);
 
   return (
     <div className={styles.container}>
       <div className={styles.containerInfo}>
-        <Card className={styles.cardImg} url={url} />
+        <Card className={styles.cardImg} url={url} media_type={media_type} />
 
         {item && (
           <div className={styles.containerTxt}>
-            <h4 className={styles.title}>{item.title || item.name}</h4>
+            <TitleInfo title={item.title || item.name} />
 
-            <p className={styles.stars}>
-              <Stars vote={item.vote_average} />
-            </p>
+            <Stars vote={item.vote_average} />
 
-            <p className={styles.sinopsis}>{item.overview}</p>
-            <p className={styles.txt}>Duración: {item.runtime} min.</p>
-            <p className={styles.txt}>
-              Géneros:{" "}
-              {item.genre && item.genres.map((genre) => (
-                <span key={genre.id}>{genre.name} </span>
-              ))}
-            </p>
-            <p className={styles.txt}>
-              Presupuesto: $ <Divider number={item.budget} />
-            </p>
+            <Sinopsis overview={item.overview} />
 
-            <p className={styles.txt}>
-              Recaudación: $ <Divider number={item.revenue} />
-            </p>
+            <p className={styles.txt}>Temporadas: {item.number_of_seasons}</p>
+            
+            <p className={styles.txt}>Episodios: {item.number_of_episodes}</p>
 
-            <p className={styles.txt}>
-              Producción:{" "}
-              {item.production_companies && item.production_companies.map((company) => (
-                <span key={company.id}>{company.name} | </span>
-              ))}
-            </p>
+            <RunTime item={item} />          
+                                    
+            <Genres item={item} />
+
+            <Budget item={item} media_type={item.media_type}/>
+            
+            <Reveneu item={item} media_type={item.media_type}/>
+              
+            <Production item={item} />
+            
             <div className={styles.socialMedia}>
               <a
                 href={`https://www.imdb.com/title/${item.imdb_id}/`}

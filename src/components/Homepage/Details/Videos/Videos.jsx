@@ -1,15 +1,12 @@
 import styles from "./videos.module.scss";
-import Card from "../../Section/Card/Card";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { FiYoutube } from "react-icons/fi";
 
 const Videos = () => {
   const [videos, setVideos] = useState();
-  console.log("Details Videos", videos);
-
   const { id } = useParams();
-  console.log("INFO MOVIE", id);
+
   useEffect(() => {
     fetch(
       `https://api.themoviedb.org/3/movie/${id}/videos?api_key=986cb57c124ba1dd4bd40f4efe74ae25`
