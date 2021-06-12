@@ -6,10 +6,8 @@ import { FiYoutube } from "react-icons/fi";
 
 const Videos = () => {
   const [videos, setVideos] = useState();
-  console.log("Details Videos", videos);
-
   const { id } = useParams();
-  console.log("INFO MOVIE", id);
+
   useEffect(() => {
     fetch(
       `https://api.themoviedb.org/3/movie/${id}/videos?api_key=986cb57c124ba1dd4bd40f4efe74ae25`
@@ -27,7 +25,7 @@ const Videos = () => {
           return (
             <div className={styles.containerList} key={video.id}>
                 
-                <a href={`/${video.id}`} target="_blank">
+                <a href={`/${video.id}`}>
                 <FiYoutube className={styles.iconVideo}/>
                 <h5 className={styles.videoTitle}>{video.name}</h5>
                 <p className={styles.videoTxt}>{video.site}</p>

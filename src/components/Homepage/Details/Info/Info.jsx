@@ -9,7 +9,6 @@ import Stars from "./Stars/Stars";
 import Divider from "./Divider/Divider";
 
 const Info = ({ url, item }) => {
-  console.log("item", item);
 
   return (
     <div className={styles.container}>
