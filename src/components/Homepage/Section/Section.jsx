@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 
 const Section = ({title, items, type}) => {
   const [variable, setVariable] = useState()
-  console.log("Section items", items)
 
   useEffect(()=>{}, [])
   
@@ -15,7 +14,7 @@ const Section = ({title, items, type}) => {
     
     <div className={styles.container}>
       
-      <Link to={`/tendencia/${type}`}>
+      <Link to={`/trending/${type}`}>
         <h2 className={styles.titleOfSection}>
           {title} <RiArrowDropRightLine className={styles.icon} />
         </h2>

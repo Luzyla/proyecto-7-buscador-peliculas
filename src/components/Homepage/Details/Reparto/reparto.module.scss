@@ -10,9 +10,16 @@
     transition: 0.5s;
 }
 
-.container {
+.containerCast {
     width: 75%;
+    display: flex;
+    justify-content: flex-start; 
+    flex-wrap: wrap;
+}
+
+.containerCastCards {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    flex-direction: column;
 }

@@ -50,7 +50,7 @@ const Details = () => {
           )
         }}/>
 
-        <Route path="/details/similares/:id" render={() => {
+        <Route path="/details/similar/:id" render={() => {
           return (
             <Similares
               item={details}

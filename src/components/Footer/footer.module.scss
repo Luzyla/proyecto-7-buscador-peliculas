@@ -1,0 +1,36 @@
+@import '../Navbar/navbar.module.scss';
+@import '../../style/variables.module.scss';
+
+.containerFooter {
+    background-color: $color-background-claro;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txtFooter {
+    color: $color-background-contraste;
+    font-size: 0.8rem;
+    font-weight: 300;
+    padding: 1rem 0 2rem 0;
+}
+
+.mySignature {
+    font-weight: bold;
+}
+
+.mySignature:hover {
+    cursor: pointer;
+    color: $color-contraste;
+}
+
+.emojiMate {
+    font-size: 1.3rem;
+}
+
+.iconHeart {
+    font-size: 1rem;
+    align-items: center;
+    color: palevioletred;
+}

@@ -2,7 +2,6 @@ import styles from './homepage.module.scss'
 import Section from './Section/Section'
 import { useEffect, useState } from 'react'
 
-
 const Homepage = () => {
   
   const [trendingMovies, setTrendingMovies] = useState([])

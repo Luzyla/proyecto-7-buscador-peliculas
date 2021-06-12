@@ -1,5 +1,5 @@
+import styles from "./reparto.module.scss";
 import Card from "../../Section/Card/Card";
-import styles from "./reparto.modules.scss";
 import { useEffect, useState } from 'react';
 import { useParams } from "react-router";
 
@@ -20,11 +20,11 @@ const Reparto = () => {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.containerCast}>
       {cast &&
         cast.map((person) => {
           return (
-            <div className={styles.containerCast} key={person.id}>
+            <div className={styles.containerCastCards} key={person.id}>
                 <Card
                 url={`https://image.tmdb.org/t/p/w370_and_h556_bestv2/${person.profile_path}`}
                 subtitle={person.name}
