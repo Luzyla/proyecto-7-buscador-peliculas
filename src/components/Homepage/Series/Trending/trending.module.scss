@@ -1,0 +1,30 @@
+@import '../../../../style/variables.module.scss';
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-background-contraste;
+    background-color: $color-background-claro;
+    font-family: 'Asap Condensed', sans-serif;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.containerTrending {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 1rem;
+}
+
+
+
+
+

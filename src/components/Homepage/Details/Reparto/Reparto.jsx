@@ -4,11 +4,11 @@ import { useEffect, useState } from 'react';
 import { useParams } from "react-router";
 
 const Reparto = () => {
+
   const [cast, setCast] = useState();
   console.log("Section items", cast);
-
   const {id} = useParams()
-    console.log("INFO CAST", id)
+
   useEffect(() => {
     fetch(
       `https://api.themoviedb.org/3/movie/${id}/credits?api_key=986cb57c124ba1dd4bd40f4efe74ae25`
@@ -36,7 +36,6 @@ const Reparto = () => {
           );
         })}
     </div>
-  );
-};
+  )}
 
 export default Reparto;

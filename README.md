@@ -22,7 +22,14 @@ Enjoy!
     - event listener
     - onclick
     - onsubmit
+    - props
 - React Router
+    - Router
+    - Link
+    - Switch
+- Hooks
+    - useEffect
+    - useState
 - SASS Modules
     - variables
     - mixins

@@ -1,4 +1,4 @@
-import { GiHeartBottle } from "react-icons/gi";
+import { GiHeartOrgan } from "react-icons/gi";
 import styles from "./footer.module.scss";
 
 const Footer = () => {
@@ -10,7 +10,7 @@ const Footer = () => {
           <span className={styles.mySignature}> @Luzyla </span>
         </a>
         with galons of <span className={styles.emojiMate}>🧉</span>& 
-        <GiHeartBottle className={styles.iconHeart} />
+        <GiHeartOrgan className={styles.iconHeart} />
       </p>
     </div>
   );
