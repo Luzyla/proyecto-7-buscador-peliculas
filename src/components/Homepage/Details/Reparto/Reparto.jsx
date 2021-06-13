@@ -6,7 +6,6 @@ import { useParams } from "react-router";
 const Reparto = () => {
 
   const [cast, setCast] = useState();
-  console.log("Section items", cast);
   const {id} = useParams()
 
   useEffect(() => {

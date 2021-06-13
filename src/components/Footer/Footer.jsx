@@ -6,7 +6,7 @@ const Footer = () => {
     <div className={styles.containerFooter}>
       <p className={styles.txtFooter}>
         Builded by 
-        <a href="http://github.com/Luzyla" target="_blank">
+        <a href="http://github.com/Luzyla">
           <span className={styles.mySignature}> @Luzyla </span>
         </a>
         with galons of <span className={styles.emojiMate}>🧉</span>& 

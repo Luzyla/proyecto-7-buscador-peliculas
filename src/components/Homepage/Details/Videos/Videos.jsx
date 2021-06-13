@@ -24,7 +24,7 @@ const Videos = () => {
           return (
             <div className={styles.containerList} key={video.id}>
                 
-                <a href={`/${video.id}`} target="_blank">
+                <a href={`/${video.id}`}>
                 <FiYoutube className={styles.iconVideo}/>
                 <h5 className={styles.videoTitle}>{video.name}</h5>
                 <p className={styles.videoTxt}>{video.site}</p>

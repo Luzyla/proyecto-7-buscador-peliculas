@@ -14,8 +14,8 @@ import Reveneu from "./Reveneu/Reveneu";
 import RunTime from "./RunTime/RunTime";
 import Production from "./Production/Production";
 
-const Info = ({ url, item, media_type }) => {
-  console.log("item", item);
+
+const Info = ({ url, item }) => {
 
   return (
     <div className={styles.container}>
