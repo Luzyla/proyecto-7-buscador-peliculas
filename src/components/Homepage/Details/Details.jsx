@@ -70,7 +70,7 @@ const Details = () => {
           )
         }}/>
 
-        <Route path="/details/:id/episodes/" render={() => {
+        <Route path="/details/:id/episodes" render={() => {
           return (
             <Episodes
               item={details}
