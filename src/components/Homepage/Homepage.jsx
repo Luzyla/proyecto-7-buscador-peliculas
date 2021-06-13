@@ -25,20 +25,24 @@ const Homepage = () => {
   }, [])
 
   return (
-    <section className={styles.body}>
-
-      <Section 
-        title="Películas que son tendencia"
-        items={trendingMovies}
-        type="/movies/trending"
-      />
-
-      <Section 
-        title="Series que son tendencia"
-        items={trendingSeries}
-        type="/series/trending"
-      />
     
+    <section className={styles.body}>
+      
+        <Section 
+          title="Películas que son tendencia"
+          items={trendingMovies}
+          type="/movies/trending"
+          media_type="movie"
+        />
+
+        <Section 
+          title="Series que son tendencia"
+          items={trendingSeries}
+          type="/series/trending"
+          media_type="tv"
+        />
+      
+
     </section>
   );
 }

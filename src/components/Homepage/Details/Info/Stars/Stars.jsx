@@ -1,5 +1,6 @@
 import { AiFillStar } from 'react-icons/ai';
 import { AiOutlineStar } from 'react-icons/ai';
+import styles from './stars.module.scss';
 
 const Stars = ({vote}) => {
     const stars = Math.round(vote / 2)
@@ -13,7 +14,12 @@ const Stars = ({vote}) => {
             starsImg.push(<AiOutlineStar />)
         }
     }     
-    return starsImg;
+    return (
+        <div className={styles.containerStars}>
+            {starsImg}
+        </div>
+        )
+    ;
 } 
 
-export default Stars
+export default Stars;

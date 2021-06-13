@@ -1,6 +1,7 @@
-# Buscador de Películas / Movies Searcher ~ by Luzyla
+# Buscador de Películas / Movie Searcher ~ by Luzyla
 
 ## URL: luzyla-proyecto-7.netlify.app
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3bb28465-dac7-4b8e-acde-080a408b6b4f/deploy-status)](https://app.netlify.com/sites/luzyla-proyecto-7/deploys)
 
 ## Descripción / Description:
 ### Español
@@ -22,7 +23,14 @@ Enjoy!
     - event listener
     - onclick
     - onsubmit
+    - props
 - React Router
+    - Router
+    - Link
+    - Switch
+- Hooks
+    - useEffect
+    - useState
 - SASS Modules
     - variables
     - mixins

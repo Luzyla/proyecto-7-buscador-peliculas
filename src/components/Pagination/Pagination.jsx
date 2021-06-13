@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 
 const Pagination = () => {
   const [pagination, setPagination] = useState([])
+
   
 
   useEffect(() => {

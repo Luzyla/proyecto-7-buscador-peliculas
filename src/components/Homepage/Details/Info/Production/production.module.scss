@@ -1,0 +1,16 @@
+@import '../../../../../style/variables.module.scss';
+
+.txt {
+    padding: 0.2rem 0;
+    font-size: 0.65rem;
+    text-align: left;
+    color: $color-background-contraste;
+    margin-left: 1rem;
+    margin: 0;
+    font-size: 0.62rem;
+    font-weight: 100;
+}
+
+.txtCompany {
+    margin-left: 0;
+}

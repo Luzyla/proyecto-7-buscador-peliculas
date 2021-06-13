@@ -1,5 +1,4 @@
 import styles from "./videos.module.scss";
-import Card from "../../Section/Card/Card";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { FiYoutube } from "react-icons/fi";

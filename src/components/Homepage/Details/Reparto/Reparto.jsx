@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from "react-router";
 
 const Reparto = () => {
+
   const [cast, setCast] = useState();
   const {id} = useParams()
 
@@ -34,7 +35,6 @@ const Reparto = () => {
           );
         })}
     </div>
-  );
-};
+  )}
 
 export default Reparto;
