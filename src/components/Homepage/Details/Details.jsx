@@ -43,7 +43,7 @@ const Details = () => {
 
       <Switch>
         
-        <Route path="/details/reparto/:id" render={() => {
+        <Route path="/details/:id/reparto" render={() => {
           return (
             <Reparto
               item={details}
@@ -52,7 +52,7 @@ const Details = () => {
           )
         }}/>
 
-        <Route path="/details/videos/:id" render={() => {
+        <Route path="/details/:id/videos" render={() => {
           return (
             <Videos
               item={details}
@@ -61,7 +61,7 @@ const Details = () => {
           )
         }}/>
 
-        <Route path="/details/similar/:id" render={() => {
+        <Route path="/details/:id/similar" render={() => {
           return (
             <Similares
               item={details}
@@ -70,7 +70,7 @@ const Details = () => {
           )
         }}/>
 
-        <Route path="/details/episodes/:id" render={() => {
+        <Route path="/details/:id/episodes/" render={() => {
           return (
             <Episodes
               item={details}

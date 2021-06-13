@@ -17,21 +17,21 @@ const Banner = ({url, items, id}) => {
           </Link>
           
           {items.revenue === 0 &&
-          <Link  to={`/details/videos/${id}`}>
+          <Link  to={`/details/${id}/videos`}>
             <h4 className={styles.navBarButtons}>EPISODIOS</h4>
           </Link>
           }
 
-          <Link  to={`/details/reparto/${id}`}>
+          <Link  to={`/details/${id}/reparto`}>
             <h4 className={styles.navBarButtons}>REPARTO</h4>
           </Link>
           
           {items.revenue !== 0 && 
-          (<Link  to={`/details/videos/${id}`}>
+          (<Link  to={`/details/${id}/videos`}>
             <h4 className={styles.navBarButtons}>VIDEOS</h4>
           </Link>)
           }
-          <Link  to={`/details/similar/${id}`}>
+          <Link  to={`/details/${id}/similar`}>
             <h4 className={styles.navBarButtons}>SIMILARES</h4>
           </Link>  
         </div>  
