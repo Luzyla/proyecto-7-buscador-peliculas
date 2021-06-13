@@ -15,7 +15,7 @@ import RunTime from "./RunTime/RunTime";
 import Production from "./Production/Production";
 
 
-const Info = ({ url, item }) => {
+const Info = ({ url, item, media_type }) => {
 
   return (
     <div className={styles.container}>
