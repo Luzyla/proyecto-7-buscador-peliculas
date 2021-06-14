@@ -6,21 +6,25 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .containerCards {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
 }
 
 .titleOfSection {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     display: flex;
     align-items: center;
     font-weight: 200;
     text-shadow: 0 0 3px $color-shadow;
     margin-top: 2.5rem;
+    align-self: flex-start;
+    margin-left: 0.5rem;
+    width: 100%;
 }
 
 .icon {

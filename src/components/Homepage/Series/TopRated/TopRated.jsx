@@ -19,7 +19,7 @@ const TopRatedSeries = () => {
     
     <section className={styles.container}>
       <div className={styles.containerTrending}>
-        <TitleSection titleOfSection="Películas con mejores críticas"/>
+        <TitleSection titleOfSection="Series con mejores críticas"/>
 
         <div className={styles.containerCards}>
 

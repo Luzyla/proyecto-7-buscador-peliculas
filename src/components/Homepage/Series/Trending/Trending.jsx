@@ -19,7 +19,7 @@ const TrendingSeries = () => {
     
     <section className={styles.container}>
       <div className={styles.containerTrending}>
-        <TitleSection titleOfSection="Películas que son tendencia"/>
+        <TitleSection titleOfSection="Series que son tendencia"/>
 
         <div className={styles.containerCards}>
 
