@@ -4,16 +4,16 @@
     overflow: hidden;
     background-size: cover;
     background-position: center center;
-    margin: 0.2rem;
+    margin: 0.5rem;
 }
 
 .cardImg {
-    width: 8.5rem;
+    max-width: 16rem;
     transition: 1s;
 }
 
 .txtImg {
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     text-align: left;
     margin-left: 0.3rem;
     transition: 0.5s;

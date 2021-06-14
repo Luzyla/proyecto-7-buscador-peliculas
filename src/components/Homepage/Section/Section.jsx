@@ -13,7 +13,7 @@ const Section = ({title, items, type, media_type}) => {
     
     <div className={styles.container}>
       
-      <Link to={`${type}`}>
+      <Link to={`${type}`} className={styles.linkTitle}>
         <h2 className={styles.titleOfSection}>
           {title} <RiArrowDropRightLine className={styles.icon} />
         </h2>
