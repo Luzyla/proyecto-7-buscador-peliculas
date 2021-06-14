@@ -41,7 +41,7 @@ const Series = () => {
 
   return (
     <section className={styles.body}>
-      { console.log("NOW SERIES", nowPlayingSeries)}
+
       <Section 
         title="Series que son tendencia"
         items={trendingSeries}

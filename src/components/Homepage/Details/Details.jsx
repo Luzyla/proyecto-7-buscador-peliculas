@@ -31,7 +31,7 @@ const Details = () => {
     })
     
   }, [])
-  console.log("LIST DETAILS", details)
+
   return (
     <section className={styles.container}>
       
