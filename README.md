@@ -1,7 +1,6 @@
 # Buscador de Películas / Movie Searcher ~ by Luzyla
 
-## URL: luzyla-proyecto-7.netlify.app
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3bb28465-dac7-4b8e-acde-080a408b6b4f/deploy-status)](https://app.netlify.com/sites/luzyla-proyecto-7/deploys)
+## URL: luzyla-proyecto-7.netlify.app [![Netlify Status](https://api.netlify.com/api/v1/badges/670b10fb-4341-4d80-b954-e89ac90128a8/deploy-status)](https://app.netlify.com/sites/luzyla-proyecto-7/deploys)
 
 ## Descripción / Description:
 ### Español
