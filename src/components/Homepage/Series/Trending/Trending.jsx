@@ -6,7 +6,7 @@ import TitleSection from '../../../TitleSection/TitleSection';
 
 const TrendingSeries = () => {
   const [trendingSeries, setTrendingSeries] = useState([])
-  console.log("Trending Series", trendingSeries)
+
   useEffect(() => {
     fetch('https://api.themoviedb.org/3/trending/tv/week?api_key=986cb57c124ba1dd4bd40f4efe74ae25')
     .then(res => res.json())

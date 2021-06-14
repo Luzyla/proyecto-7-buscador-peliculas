@@ -1,7 +1,6 @@
 import styles from "./genres.module.scss";
 
 const Genres = ({ item }) => {
-  console.log("item genre", item);
 
   return (
     <p className={styles.txt}>

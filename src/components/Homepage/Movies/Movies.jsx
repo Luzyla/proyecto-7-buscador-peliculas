@@ -1,10 +1,9 @@
 import styles from './movies.module.scss';
 import Section from '../Section/Section';
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+// import { useParams } from 'react-router';
 
 const Movies = () => {
-  
   
   const [trendingMovies, setTrendingMovies] = useState([])
 
