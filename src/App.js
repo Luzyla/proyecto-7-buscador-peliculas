@@ -28,6 +28,9 @@ const App = () => {
         <Route path="/movies" exact component={Movies}/>
         <Route path="/series" exact component={Series}/>
         <Route path="/details/:id" component={Details}/>
+        {/* Nota que parecidos son los siguientes componentes entre si
+        No esta mal que haya uno por ruta, pero cada uno podria llamar al mismo componente 
+        o al mismo hook, o ambas!, para que tu codigo no quede tan repetitivo. */}
         <Route path="/movies/trending" exact component={Trending}/>
         <Route path="/movies/top-rated" exact component={TopRated}/>
         <Route path="/movies/upcoming" exact component={Upcoming}/>
@@ -35,6 +38,7 @@ const App = () => {
         <Route path="/series/trending" exact component={TrendingSeries}/>
         <Route path="/series/top-rated" exact component={TopRatedSeries}/>
         <Route path="/series/now-playing" exact component={NowPlayingSeries}/>
+        {/* falta un 404 */}
       </Switch>
       
       <Footer />

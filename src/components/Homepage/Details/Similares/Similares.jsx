@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { useLocation, useParams } from "react-router";
 
 const Similares = () => {
+  // Reparto y Similares son componentes muuuy parecidos
   const [similar, setSimilar] = useState();
   const {id} = useParams()
   const { search } = useLocation()
@@ -33,6 +34,7 @@ const Similares = () => {
           return (
             <div className={styles.containerSimilCards} key={movie.id}>
                 <Card
+                // aca no le pasas id a Card, asi que la url del link es undefined!!
                 url={`https://image.tmdb.org/t/p/w370_and_h556_bestv2/${movie.poster_path}`}
                 subtitle={movie.title || movie.name}
                 />

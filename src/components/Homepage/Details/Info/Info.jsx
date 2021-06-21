@@ -37,10 +37,12 @@ const Info = ({ url, item, media_type }) => {
             <RunTime item={item} />          
                                     
             <Genres item={item} />
-
+            {/* no necesita media_type */}
             <Budget item={item} media_type={item.media_type}/>
             
+            {/* no necesita media_type */}
             <Reveneu item={item} media_type={item.media_type}/>
+            {/* nota que Budget y Reveneu son casi iguales */}
               
             <Production item={item} />
           
@@ -51,7 +53,7 @@ const Info = ({ url, item, media_type }) => {
               >
                 <SiImdb className={styles.icon} />
               </a>
-
+              {/* deberian ser condicionales, solo si las urls existen */}
               <RiTwitterFill className={styles.icon} />
               <IoLogoFacebook className={styles.icon} />
               <IoLogoInstagram className={styles.icon} />

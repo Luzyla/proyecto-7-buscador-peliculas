@@ -6,6 +6,7 @@ const Homepage = () => {
   
   const [trendingMovies, setTrendingMovies] = useState([])
 
+  // esto deberia ser un hook custom, para no repetir
   useEffect(() => {
     fetch('https://api.themoviedb.org/3/trending/movie/week?api_key=986cb57c124ba1dd4bd40f4efe74ae25')
     .then(res => res.json())
@@ -13,7 +14,8 @@ const Homepage = () => {
       setTrendingMovies(response.results.slice(0,5))   
     })
   }, [])
-  
+
+  // todos los estados deben estar al comienzo del componente
   const [trendingSeries, setTrendingSeries] = useState([])
 
   useEffect(() => {
@@ -26,8 +28,11 @@ const Homepage = () => {
 
   return (
     
-    <section className={styles.body}>
+    <section className={styles.body}> 
+    {/* esto no es el body, sino una seccion: mejora el nombre de la clase */}
       
+      {/* si esto es una "seccion", no deberian tener la etiqueta section dentro?
+      si no son secciones, mejoremos el nombre para que sea mas descriptivo */}
         <Section 
           title="Películas que son tendencia"
           items={trendingMovies}

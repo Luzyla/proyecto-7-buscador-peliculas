@@ -12,6 +12,7 @@ import Episodes from './Episodes/Episodes'
 const Details = () => {
 
   const {id} = useParams()
+  // siempre da un valor inicial al estado
   const [details, setDetails] = useState()
   const { search } = useLocation()
   

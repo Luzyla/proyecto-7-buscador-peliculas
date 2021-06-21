@@ -2,8 +2,8 @@
 
 .navbar {
     width: 100%;
-    color: #C1C1C1;
-    background-color: #424242;
+    color: #C1C1C1; // $color-background-contraste
+    background-color: #424242; // $color-background-oscuro
     padding: 0.3rem 0;    
     display: flex;
     flex-wrap: nowrap;
@@ -39,14 +39,14 @@
 }
 
 .containerSearch {
-    margin-left: 1rem;
+    margin-left: 1rem; // podria ser una variable
     display: flex;
     align-items: center;
 }
 
 .search {
     margin-left: 0.4rem;
-    background-color: #C1C1C1;
+    background-color: #C1C1C1; // $color-background-contraste
     border-style: none;
 }
 
