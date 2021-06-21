@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Section = ({title, items, type, media_type}) => {
 
+  // elimina cosas como esta en una entrega
   useEffect(()=>{}, [])
   
   return (
@@ -21,6 +22,7 @@ const Section = ({title, items, type, media_type}) => {
 
       <div className={styles.containerCards}>
         {items && items.map((item) => {
+          {/* privilegia usar return implicito con jsx */}
           return (<Card 
           url={`https://image.tmdb.org/t/p/w370_and_h556_bestv2/${item.poster_path}`}
           subtitle={item.title || item.name}

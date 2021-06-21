@@ -16,6 +16,7 @@ const Banner = ({url, items, id}) => {
             <h4 className={styles.navBarButtons}>INFO</h4> 
           </Link>
           
+          {/* {!items.revenue && */}
           {items.revenue === 0 &&
           <Link  to={`/details/${id}/videos`}>
             <h4 className={styles.navBarButtons}>EPISODIOS</h4>
@@ -25,7 +26,7 @@ const Banner = ({url, items, id}) => {
           <Link  to={`/details/${id}/reparto`}>
             <h4 className={styles.navBarButtons}>REPARTO</h4>
           </Link>
-          
+            {/* {items.revenue && */}
           {items.revenue !== 0 && 
           (<Link  to={`/details/${id}/videos`}>
             <h4 className={styles.navBarButtons}>VIDEOS</h4>

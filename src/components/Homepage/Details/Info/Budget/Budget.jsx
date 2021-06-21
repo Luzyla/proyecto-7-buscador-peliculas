@@ -6,6 +6,7 @@ const Budget = ({ item }) => {
   return (
     
     <p className={styles.txt}>
+    {/* Divider podria ser una funcion en lugar de un componente */}
       Presupuesto: $ <Divider number={item.budget} />
     </p>
 

@@ -22,7 +22,8 @@ const Trending = () => {
         <TitleSection titleOfSection="Películas que son tendencia"/>
 
         <div className={styles.containerCards}>
-
+        {/* trendingMovies siempre va a ser truthy ya que lo inicias como un array vacio
+        quiza estes pensando en trendingMovies.length? */}
             {trendingMovies && trendingMovies.map((trendMovie) => {
             return (<Card 
             url={`https://image.tmdb.org/t/p/w370_and_h556_bestv2/${trendMovie.poster_path}`}
